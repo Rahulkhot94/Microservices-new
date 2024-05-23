@@ -1,0 +1,8 @@
+com\protech\orderservice\dto\OrderRequest.class
+com\protech\orderservice\dto\OrderLineItemsDto.class
+com\protech\orderservice\model\Order.class
+com\protech\orderservice\OrderServiceApplication.class
+com\protech\orderservice\repository\OrderRepository.class
+com\protech\orderservice\service\OrderService.class
+com\protech\orderservice\controller\OrderController.class
+com\protech\orderservice\model\OrderLineItems.class

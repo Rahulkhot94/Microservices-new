@@ -1,0 +1,5 @@
+com\protech\inventory\service\InventoryService.class
+com\protech\inventory\controller\InventoryController.class
+com\protech\inventory\InventoryServiceApplication.class
+com\protech\inventory\model\Inventory.class
+com\protech\inventory\repository\InventoryRepository.class

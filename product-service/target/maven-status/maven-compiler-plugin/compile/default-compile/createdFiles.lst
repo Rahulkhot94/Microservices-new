@@ -1,0 +1,10 @@
+com\protech\product\dto\ProductResponse$ProductResponseBuilder.class
+com\protech\product\repository\ProductRepository.class
+com\protech\product\dto\ProductResponse.class
+com\protech\product\dto\ProductRequest$ProductRequestBuilder.class
+com\protech\product\model\Product$ProductBuilder.class
+com\protech\product\model\Product.class
+com\protech\product\ProductServiceApplication.class
+com\protech\product\service\ProductService.class
+com\protech\product\dto\ProductRequest.class
+com\protech\product\controller\ProductController.class
