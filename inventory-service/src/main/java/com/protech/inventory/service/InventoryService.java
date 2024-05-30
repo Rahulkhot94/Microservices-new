@@ -1,4 +1,4 @@
-  package com.protech.inventory.service;
+package com.protech.inventory.service;
 
 import java.util.List;
 
@@ -19,19 +19,13 @@ public class InventoryService {
 
 	private final InventoryRepository inventoryRepository;
 
-    @Transactional(readOnly = true)
-    @SneakyThrows
-    public List<InventoryResponse> isInStock(List<String> skuCode) {
-    	log.info("Wait started");
-    	Thread.sleep(8000);
-    	log.info("Wait ended");
-        return inventoryRepository.findBySkuCodeIn(skuCode).stream()
-        		.map(inventory ->
-        				InventoryResponse.builder()
-        				.skuCode(inventory.getSkuCode())
-        				.isInStock(inventory.getQuantity()>0)
-        				.build()
-        				)
-        		.toList();
-    }
+	@Transactional(readOnly = true)
+	@SneakyThrows
+	public List<InventoryResponse> isInStock(List<String> skuCode) {
+		log.info("Wait started");
+		Thread.sleep(8000);
+		log.info("Wait ended");
+		return inventoryRepository.findBySkuCodeIn(skuCode).stream().map(inventory -> InventoryResponse.builder()
+				.skuCode(inventory.getSkuCode()).isInStock(inventory.getQuantity() > 0).build()).toList();
+	}
 }
